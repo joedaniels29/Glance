@@ -1,0 +1,39 @@
+PODS:
+  - AFNetworking (3.0.1):
+    - AFNetworking/NSURLSession (= 3.0.1)
+    - AFNetworking/Reachability (= 3.0.1)
+    - AFNetworking/Security (= 3.0.1)
+    - AFNetworking/Serialization (= 3.0.1)
+    - AFNetworking/UIKit (= 3.0.1)
+  - AFNetworking/NSURLSession (3.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.1)
+  - AFNetworking/Security (3.0.1)
+  - AFNetworking/Serialization (3.0.1)
+  - Alamofire (3.1.3)
+  - Mantle (2.0.6):
+    - Mantle/extobjc (= 2.0.6)
+  - Mantle/extobjc (2.0.6)
+  - OAuthSwift (0.4.8)
+  - Runes (3.1.0)
+  - SwiftyUserDefaults (2.0.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Alamofire
+  - Mantle
+  - OAuthSwift (~> 0.4.6)
+  - Runes
+  - SwiftyUserDefaults
+
+SPEC CHECKSUMS:
+  AFNetworking: 20d8749e03e45f1e5c046ad0b647e0b07bcdd91f
+  Alamofire: 9f93b56389e48def9220dd57d1f44b1927229a5a
+  Mantle: 299966b00759634931699f69cb6a30b9239b944d
+  OAuthSwift: 23bd4807a4fd9e54ef6e7c2b5875138819186d9a
+  Runes: 21c2d32b740a0091dbf036517971278ca9f700b3
+  SwiftyUserDefaults: 1266e9734c68bcfbac8294ee84173dc8ba6db312
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,4 @@
+github "robb/Cartography" "0.6.0"
+github "joedaniels29/RHPreferences" "a815138177e63af4a1e9e04deb4e4a55b199e8dd"
+github "antitypical/Result" "1.0.1"
+github "ReactiveCocoa/ReactiveCocoa" "v4.0.0-alpha.5"

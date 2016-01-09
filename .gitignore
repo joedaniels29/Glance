@@ -17,9 +17,14 @@ GeneratedDocumentation/
 Carthage.checkout/
 /.bundle
 
+#CocoaPods
+./Carthage/*
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /target
 /log/*.log
 /tmp
+
+
 

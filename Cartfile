@@ -1,0 +1,3 @@
+github "ReactiveCocoa/ReactiveCocoa" "v4.0.0-alpha.5"
+github "joedaniels29/RHPreferences" "master"
+github "robb/Cartography" ~> 0.6.0
