@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TTweetMiniView" customModule="Glance" customModuleProvider="target"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="TTweetMiniView" customModule="Glance">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2X9-Gd-MZH">
+                    <rect key="frame" x="18" y="52" width="66" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Username" id="mB8-9q-Mom">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="14h-Ll-GRV">
+                    <rect key="frame" x="160" y="52" width="37" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="Avp-vQ-qEA">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="14h-Ll-GRV" firstAttribute="bottom" secondItem="2X9-Gd-MZH" secondAttribute="bottom" id="2pH-Dz-ajo"/>
+                <constraint firstItem="2X9-Gd-MZH" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="UiX-E5-uNS"/>
+                <constraint firstItem="14h-Ll-GRV" firstAttribute="leading" secondItem="2X9-Gd-MZH" secondAttribute="trailing" constant="80" id="gHB-2j-Lke"/>
+                <constraint firstItem="2X9-Gd-MZH" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="gtM-oA-d37"/>
+            </constraints>
+            <connections>
+                <outlet property="tweet" destination="14h-Ll-GRV" id="kE9-Zm-1mB"/>
+                <outlet property="username" destination="2X9-Gd-MZH" id="ZJe-vH-vgg"/>
+            </connections>
+            <point key="canvasLocation" x="5" y="501"/>
+        </customView>
+    </objects>
+</document>
