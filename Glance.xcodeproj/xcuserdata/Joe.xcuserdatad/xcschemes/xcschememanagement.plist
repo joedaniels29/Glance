@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>GlanceKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>D8983D891B24C5380000AAD3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8983DA11B24C8890000AAD3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8983DAB1B24C8890000AAD3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

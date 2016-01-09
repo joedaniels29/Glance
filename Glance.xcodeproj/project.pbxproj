@@ -7,11 +7,148 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D8983D7E1B24C5380000AAD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8983D7D1B24C5380000AAD3 /* AppDelegate.swift */; };
-		D8983D801B24C5380000AAD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8983D7F1B24C5380000AAD3 /* ViewController.swift */; };
+		123A006AD386B4DE3D2D9FBF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0FBDFBFD75A4831BF658 /* Service.swift */; };
+		123A0070AF99ACEB22B31EAE /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A02B81979A17D9321F42A /* Twitter.swift */; };
+		123A008368AA1AA2149203C3 /* FlickrSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A091D7255A80ADF9BE565 /* FlickrSettingsViewController.swift */; };
+		123A00A0DB64F383EA39DD79 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A04C1F8470756FF1BB775 /* DateExtensions.swift */; };
+		123A00A57182AE0DE07F8F75 /* TwitterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01B5139BFB11370ACA0D /* TwitterRouter.swift */; };
+		123A00B114959194BF8722DA /* GithubSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A08992BCBCC9A75C9C5D2 /* GithubSettingsViewController.swift */; };
+		123A00C2F142ED6D7021961D /* GlanceContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A06553DC94203BCCCA52E /* GlanceContainerViewController.swift */; };
+		123A011E20016F93E6D505C5 /* ControlCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A081E8DDF5083D8FBDBC3 /* ControlCenterViewController.swift */; };
+		123A0144025548DDE3ECE985 /* GlanceWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A04CA3091ED316FDEAAD6 /* GlanceWindowManager.swift */; };
+		123A01B3BC89C0A7ABA1C135 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0202EC4D391C8CC293D5 /* Flickr.swift */; };
+		123A01CAF656A3EC2597182D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0FBDFBFD75A4831BF658 /* Service.swift */; };
+		123A025D9622CF8A79B6C988 /* SolidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0A62CE83D03E5A9D4DE2 /* SolidView.swift */; };
+		123A02831FAA36CAD3611A88 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01841029A1FE77F8994B /* TimelineViewController.swift */; };
+		123A02D8B0054993B2EEEE3C /* GenericContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0E0391579C698A8C0078 /* GenericContainerViewController.swift */; };
+		123A02DE79F6A062D7320CC7 /* Chronological.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A087F4F52B0E2D46FC3D1 /* Chronological.swift */; };
+		123A02FBE878E2132D423FF5 /* Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0D6B916EA34EA7E2B943 /* Github.swift */; };
+		123A03060767D37D33D73114 /* OAuth1Standard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0F5830CC8A9404573540 /* OAuth1Standard.swift */; };
+		123A034CCAFC39FE3B3C0C43 /* ControlCenterWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A08652990EB3073407058 /* ControlCenterWindow.m */; };
+		123A0358851C0621D0CF4C15 /* NSView+FullScreenAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A06D090D6E46BF9D113B0 /* NSView+FullScreenAdditions.m */; };
+		123A039CDDC14A88599D935C /* ControlCenterWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 123A01A609234BA45E5005C6 /* ControlCenterWindow.h */; };
+		123A03B3231267797B7700EF /* Tumblr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0BC66ACA189C5EE69A36 /* Tumblr.swift */; };
+		123A03F152BA361637A71D8C /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0202EC4D391C8CC293D5 /* Flickr.swift */; };
+		123A041673439A8A210CA8C5 /* ServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01E89B3FB0C8ABBA4F5D /* ServiceController.swift */; };
+		123A044703F24B63BA669BC0 /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A02B81979A17D9321F42A /* Twitter.swift */; };
+		123A04798987574E4B63B768 /* StoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A040BB55D932C2FE83362 /* StoryListViewController.swift */; };
+		123A049D721198E5C101CD6D /* TwitterSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0B16A20E5A60E6A51503 /* TwitterSettingsViewController.swift */; };
+		123A04C60820852F2E68B53F /* AuthorizationStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0C48567634709FA5BC4C /* AuthorizationStandard.swift */; };
+		123A04ECDF78A8BC7DF2B572 /* UnathorizedAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0E29D58339D3E5E98D24 /* UnathorizedAccountViewController.swift */; };
+		123A05115F1D3E77B23D0694 /* TTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A08B629B74125F8434AF1 /* TTweet.m */; };
+		123A0550CA3790BA947F598A /* AuthorizationStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0C48567634709FA5BC4C /* AuthorizationStandard.swift */; };
+		123A05F1EB9C85D366479AFB /* InstagramSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A06AE0FC603BE51570C5F /* InstagramSettingsViewController.swift */; };
+		123A0651CF33717FD1EAE420 /* GlanceServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A035A0C8FA3F0FA0920BC /* GlanceServices.swift */; };
+		123A0671484AF73F8B8C1827 /* ServiceDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A00EAF4F2BFDACA314630 /* ServiceDisplay.swift */; };
+		123A0689E0E9E8AB2C97DA9C /* MutableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0AC77BC2BC294F452B5F /* MutableProperty.swift */; };
+		123A069FD922F2DC9E735FE5 /* MutableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0AC77BC2BC294F452B5F /* MutableProperty.swift */; };
+		123A0770515B85EFA1CEB8CD /* NSView+FullScreenAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 123A08AB1E363393E75804E4 /* NSView+FullScreenAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		123A077A44570930FDA4553B /* OAuth1Standard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0F5830CC8A9404573540 /* OAuth1Standard.swift */; };
+		123A07E7457530EE3F1B37C1 /* ServicesSettingsSplitViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01BA3D6FE39B4CBE4BA6 /* ServicesSettingsSplitViewControl.swift */; };
+		123A0874526F260D46AE0768 /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0ECEE9AC38BC5C6DD73A /* Instagram.swift */; };
+		123A08845326A315966214E2 /* Chronological.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A087F4F52B0E2D46FC3D1 /* Chronological.swift */; };
+		123A089F9A13C810E3295EA8 /* Instagram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123A005EE3E3ADB9AD549C2A /* Instagram.storyboard */; };
+		123A08D8C4318797DAD6A8A6 /* ServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0B554C43642DDC235DBE /* ServiceRouter.swift */; };
+		123A092D2740D7D278CFB921 /* TwitterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 123A01D58F2143BAF9BC5AB2 /* TwitterCell.xib */; };
+		123A094A2366C5F65F04EAD3 /* Github.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123A049DD9DAD66C77C46A94 /* Github.storyboard */; };
+		123A099D6F359BCB18743675 /* ServiceDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A00EAF4F2BFDACA314630 /* ServiceDisplay.swift */; };
+		123A09F8305F747E8F66440B /* GlanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0A7D4FA669196B7B58B0 /* GlanceView.swift */; };
+		123A0A0D0A2A3367E8037C18 /* OAuth2Standard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A07B61B36BD2AADE406A9 /* OAuth2Standard.swift */; };
+		123A0A3F53A701818C77612F /* StoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A040BB55D932C2FE83362 /* StoryListViewController.swift */; };
+		123A0A838DD86060983DF066 /* GlanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A035AD1D307609E15EDFC /* GlanceService.swift */; };
+		123A0A8611E2D522F6B9C318 /* ServiceSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0C8A3B99A49670A139EE /* ServiceSettingsController.swift */; };
+		123A0AAB428535EFB75FE894 /* ControlCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A081E8DDF5083D8FBDBC3 /* ControlCenterViewController.swift */; };
+		123A0AAC7669AB4280E572EE /* GlanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A035AD1D307609E15EDFC /* GlanceService.swift */; };
+		123A0AF1575A215B9CD89FD1 /* RootTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A03C5760FB9C9CB8ABFAC /* RootTheme.swift */; };
+		123A0AF3088752B352DEF4A5 /* TumblrSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01D0B6828222ABD9AE4F /* TumblrSettingsViewController.swift */; };
+		123A0B25BC36BE85925FFF1F /* Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0D6B916EA34EA7E2B943 /* Github.swift */; };
+		123A0B38E25CD3FC28D37BBD /* UnathorizedAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0E29D58339D3E5E98D24 /* UnathorizedAccountViewController.swift */; };
+		123A0B6C30A050C3CF851334 /* ServicesSettingsSplitViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01BA3D6FE39B4CBE4BA6 /* ServicesSettingsSplitViewControl.swift */; };
+		123A0C35CD7542A040626056 /* GenericContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0E0391579C698A8C0078 /* GenericContainerViewController.swift */; };
+		123A0C68EDFC042F15843603 /* TTweetMiniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01D2F5773EBD07A45F36 /* TTweetMiniView.swift */; };
+		123A0CAE721C3DD74C5620D0 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01841029A1FE77F8994B /* TimelineViewController.swift */; };
+		123A0CC375324F4CBC9603FC /* GlanceServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A035A0C8FA3F0FA0920BC /* GlanceServices.swift */; };
+		123A0CD40F5CB49389610340 /* OAuth2Standard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A07B61B36BD2AADE406A9 /* OAuth2Standard.swift */; };
+		123A0CDC8FA42E1BD657BA4E /* GlanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0A7D4FA669196B7B58B0 /* GlanceView.swift */; };
+		123A0CEB5D3A2DB7F989551F /* ServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01E89B3FB0C8ABBA4F5D /* ServiceController.swift */; };
+		123A0CF1C28F8D783D35444F /* TTweetMiniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01D2F5773EBD07A45F36 /* TTweetMiniView.swift */; };
+		123A0CF738C102FD860CD486 /* GlanceWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A04CA3091ED316FDEAAD6 /* GlanceWindowManager.swift */; };
+		123A0D8116E5C7A59F793EF8 /* GlanceContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A06553DC94203BCCCA52E /* GlanceContainerViewController.swift */; };
+		123A0D81D1810E00D8E26CC2 /* SolidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0A62CE83D03E5A9D4DE2 /* SolidView.swift */; };
+		123A0DF0EC8149FEC65B25DE /* NSView+FullScreenAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A06D090D6E46BF9D113B0 /* NSView+FullScreenAdditions.m */; };
+		123A0DF70F50C59A4C355F08 /* TwitterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A01B5139BFB11370ACA0D /* TwitterRouter.swift */; };
+		123A0E4156A56F112AB6AE6A /* TTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A08B629B74125F8434AF1 /* TTweet.m */; };
+		123A0E505E306136D275ED77 /* Flickr.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123A0D5013C7DE6B26DFAF30 /* Flickr.storyboard */; };
+		123A0E8B22AEA5E16E51BE49 /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0ECEE9AC38BC5C6DD73A /* Instagram.swift */; };
+		123A0FC297F0A101286BD849 /* Twitter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123A0A8F492E3B01A0012FE1 /* Twitter.storyboard */; };
+		123A0FE165D90E877C83657F /* ServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0B554C43642DDC235DBE /* ServiceRouter.swift */; };
+		D821813E1BC56B7C00368153 /* Glance.AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D821813D1BC56B7C00368153 /* Glance.AuthorizationViewController.xib */; };
+		D82DE3E71C417A9B00EEAD42 /* GlanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E5A7591B651CEA00097856 /* GlanceViewController.swift */; };
+		D834DE131BBD986F004F86AA /* RHPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D834DE121BBD986F004F86AA /* RHPreferencesWindow.xib */; };
+		D848B0EB1B6FAC1D00703C52 /* StylizedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D848B0E91B6FAC1D00703C52 /* StylizedView.swift */; };
+		D848B0EC1B6FB0D200703C52 /* GlanceFullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8966BB81B5A9B080043A2B2 /* GlanceFullViewController.swift */; };
+		D848B0EE1B6FB10700703C52 /* GlanceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8948CF21B35AA1B00A1185A /* GlanceWindowController.swift */; };
+		D848B0EF1B6FB10700703C52 /* GlanceWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0CF64BDE026277EFAC4C /* GlanceWindow.swift */; };
+		D848B0F01B6FB10700703C52 /* GlanceFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8966BBC1B5A9CC80043A2B2 /* GlanceFullView.swift */; };
+		D851AB501BC711280079C238 /* RHPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D851AB4F1BC711280079C238 /* RHPreferences.framework */; };
+		D851AB511BC711280079C238 /* RHPreferences.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D851AB4F1BC711280079C238 /* RHPreferences.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D85B54051B742C2B00604697 /* NSEdgeInsets+custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85B54041B742C2B00604697 /* NSEdgeInsets+custom.swift */; };
+		D85F0F731B5B3A970013BCDE /* PropertyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F0F721B5B3A970013BCDE /* PropertyOf.swift */; };
+		D885F3C41BC610CC003C371C /* Glance.UnathorizedAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D885F3C31BC610CC003C371C /* Glance.UnathorizedAccountViewController.xib */; };
+		D8983D7E1B24C5380000AAD3 /* GlanceApplicationDeleate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8983D7D1B24C5380000AAD3 /* GlanceApplicationDeleate.swift */; };
+		D8983D801B24C5380000AAD3 /* BaseGlanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8983D7F1B24C5380000AAD3 /* BaseGlanceViewController.swift */; };
 		D8983D821B24C5380000AAD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8983D811B24C5380000AAD3 /* Images.xcassets */; };
 		D8983D851B24C5380000AAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8983D831B24C5380000AAD3 /* Main.storyboard */; };
 		D8983D911B24C5380000AAD3 /* GlanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8983D901B24C5380000AAD3 /* GlanceTests.swift */; };
+		D8983DA71B24C8890000AAD3 /* GlanceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D8983DA61B24C8890000AAD3 /* GlanceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8983DAD1B24C8890000AAD3 /* GlanceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8983DA21B24C8890000AAD3 /* GlanceKit.framework */; };
+		D8983DB61B24C8890000AAD3 /* GlanceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8983DB51B24C8890000AAD3 /* GlanceKitTests.swift */; };
+		D8983DB91B24C8890000AAD3 /* GlanceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8983DA21B24C8890000AAD3 /* GlanceKit.framework */; };
+		D8983DBA1B24C8890000AAD3 /* GlanceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8983DA21B24C8890000AAD3 /* GlanceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8983DC41B24C8DA0000AAD3 /* GlanceKitApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8983DC31B24C8DA0000AAD3 /* GlanceKitApplication.swift */; };
+		D8983DC61B24CBDE0000AAD3 /* GlanceKitApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8983DC31B24C8DA0000AAD3 /* GlanceKitApplication.swift */; };
+		D89975C51B530D410062984C /* GlanceKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89975C41B530D410062984C /* GlanceKit.storyboard */; };
+		D89975CE1B53456F0062984C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89975CD1B53456F0062984C /* Theme.swift */; };
+		D89975CF1B53456F0062984C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89975CD1B53456F0062984C /* Theme.swift */; };
+		D89975D11B534AFB0062984C /* ThemeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89975D01B534AFB0062984C /* ThemeEngine.swift */; };
+		D89975D21B534AFB0062984C /* ThemeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89975D01B534AFB0062984C /* ThemeEngine.swift */; };
+		D89975D51B5355B50062984C /* NSFileManagerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89975D41B5355B50062984C /* NSFileManagerExt.swift */; };
+		D89975D61B5355B50062984C /* NSFileManagerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89975D41B5355B50062984C /* NSFileManagerExt.swift */; };
+		D89B43361BBCEB2600A3D241 /* CoreGraphics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D823C4671B51BC8700878E8C /* CoreGraphics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D89B43371BBCEB2600A3D241 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D823C4611B51BC5E00878E8C /* Quartz.framework */; };
+		D89B43381BBCEB2600A3D241 /* Quartz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D823C4611B51BC5E00878E8C /* Quartz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D89B43391BBCEB2600A3D241 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D823C4621B51BC5E00878E8C /* QuartzCore.framework */; };
+		D89B433A1BBCEB2600A3D241 /* QuartzCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D823C4621B51BC5E00878E8C /* QuartzCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8A2D2E01B9751E100CA8CF3 /* GlanceWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A2D2DF1B9751E100CA8CF3 /* GlanceWindowManager.swift */; };
+		D8AC74451B51CCE70008EFB3 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AC743B1B51CCE70008EFB3 /* Result.framework */; };
+		D8AC74461B51CCE70008EFB3 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AC743B1B51CCE70008EFB3 /* Result.framework */; };
+		D8AC74471B51CCE70008EFB3 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AC743B1B51CCE70008EFB3 /* Result.framework */; };
+		D8B136821BC72E47003EF7E9 /* ServiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B136811BC72E47003EF7E9 /* ServiceListViewController.swift */; };
+		D8B136871BC74671003EF7E9 /* ServicesSplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B136851BC74671003EF7E9 /* ServicesSplashScreenViewController.swift */; };
+		D8B136881BC74671003EF7E9 /* ServicesSplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B136861BC74671003EF7E9 /* ServicesSplashScreenViewController.xib */; };
+		D8B1368A1BC747FD003EF7E9 /* ServiceDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B136891BC747FD003EF7E9 /* ServiceDetailContainerViewController.swift */; };
+		D8B5E4A71B51D02E00019D55 /* Pods_Glance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5623E6E86D452066CE3AAA0B /* Pods_Glance.framework */; };
+		D8B5E4A81B51D02E00019D55 /* Pods_Glance.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5623E6E86D452066CE3AAA0B /* Pods_Glance.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8B5E4A91B51D03300019D55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D823C4671B51BC8700878E8C /* CoreGraphics.framework */; };
+		D8C2F3FA1BBF352300340D38 /* ServiceSettingsContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C2F3F91BBF352300340D38 /* ServiceSettingsContainerController.swift */; };
+		D8C2F3FC1BBF3CAC00340D38 /* GithubGlanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0FE9DA3139BEF50DF33B /* GithubGlanceViewController.swift */; };
+		D8C2F4001BBF3E9900340D38 /* ServiceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C2F3FF1BBF3E9900340D38 /* ServiceList.swift */; };
+		D8C2F4021BBF43B900340D38 /* Tumblr.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C2F4011BBF43B900340D38 /* Tumblr.storyboard */; };
+		D8C2F4041BBF4E3500340D38 /* glanceSplash.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C2F4031BBF4E3500340D38 /* glanceSplash.xib */; };
+		D8C2F4061BBF753500340D38 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C2F4051BBF753500340D38 /* Runes.framework */; };
+		D8C2F4071BBF753500340D38 /* Runes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8C2F4051BBF753500340D38 /* Runes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8C2F4081BBF757000340D38 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C2F4051BBF753500340D38 /* Runes.framework */; };
+		D8C46E3A1BBCCDD5008D3E9E /* RHPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C46E381BBCCDD5008D3E9E /* RHPreferences.framework */; };
+		D8C46E3B1BBCCE28008D3E9E /* RHPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C46E381BBCCDD5008D3E9E /* RHPreferences.framework */; };
+		D8C46E3C1BBCCE69008D3E9E /* ControlCenterWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0CF7C746239A62B97EE7 /* ControlCenterWindowController.swift */; };
+		D8C46E3D1BBCCE69008D3E9E /* ControlCenterWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A0CF7C746239A62B97EE7 /* ControlCenterWindowController.swift */; };
+		D8E5A7581B651CE000097856 /* GlanceContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E5A7571B651CE000097856 /* GlanceContainerView.swift */; };
+		D8F3D7661C03F7AB007A41FB /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F3D7651C03F7AB007A41FB /* ReactiveCocoa.framework */; };
+		D8F3D7671C03F7AB007A41FB /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F3D7651C03F7AB007A41FB /* ReactiveCocoa.framework */; };
+		D8F3D7681C03F9EE007A41FB /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F3D7651C03F7AB007A41FB /* ReactiveCocoa.framework */; };
+		D8F3D7691C03F9EE007A41FB /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8F3D7651C03F7AB007A41FB /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8F3D76B1C03FA17007A41FB /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F3D76A1C03FA17007A41FB /* Cartography.framework */; };
+		D8F3D76C1C03FA17007A41FB /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F3D76A1C03FA17007A41FB /* Cartography.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,18 +159,160 @@
 			remoteGlobalIDString = D8983D771B24C5380000AAD3;
 			remoteInfo = Glance;
 		};
+		D8983DAE1B24C8890000AAD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8983D701B24C5380000AAD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8983DA11B24C8890000AAD3;
+			remoteInfo = GlanceKit;
+		};
+		D8983DB01B24C8890000AAD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8983D701B24C5380000AAD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8983D771B24C5380000AAD3;
+			remoteInfo = Glance;
+		};
+		D8983DB71B24C8890000AAD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8983D701B24C5380000AAD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8983DA11B24C8890000AAD3;
+			remoteInfo = GlanceKit;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D8983DBE1B24C8890000AAD3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D89B43381BBCEB2600A3D241 /* Quartz.framework in Embed Frameworks */,
+				D89B43361BBCEB2600A3D241 /* CoreGraphics.framework in Embed Frameworks */,
+				D8B5E4A81B51D02E00019D55 /* Pods_Glance.framework in Embed Frameworks */,
+				D8F3D7691C03F9EE007A41FB /* ReactiveCocoa.framework in Embed Frameworks */,
+				D8983DBA1B24C8890000AAD3 /* GlanceKit.framework in Embed Frameworks */,
+				D8C2F4071BBF753500340D38 /* Runes.framework in Embed Frameworks */,
+				D89B433A1BBCEB2600A3D241 /* QuartzCore.framework in Embed Frameworks */,
+				D851AB511BC711280079C238 /* RHPreferences.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		123A000D4CEA1689F26C285D /* TUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUser.m; sourceTree = "<group>"; };
+		123A005EE3E3ADB9AD549C2A /* Instagram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instagram.storyboard; sourceTree = "<group>"; };
+		123A00EAF4F2BFDACA314630 /* ServiceDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDisplay.swift; sourceTree = "<group>"; };
+		123A01841029A1FE77F8994B /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		123A01A609234BA45E5005C6 /* ControlCenterWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlCenterWindow.h; sourceTree = "<group>"; };
+		123A01B5139BFB11370ACA0D /* TwitterRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterRouter.swift; sourceTree = "<group>"; };
+		123A01BA3D6FE39B4CBE4BA6 /* ServicesSettingsSplitViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesSettingsSplitViewControl.swift; sourceTree = "<group>"; };
+		123A01D0B6828222ABD9AE4F /* TumblrSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TumblrSettingsViewController.swift; sourceTree = "<group>"; };
+		123A01D2F5773EBD07A45F36 /* TTweetMiniView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTweetMiniView.swift; sourceTree = "<group>"; };
+		123A01D58F2143BAF9BC5AB2 /* TwitterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwitterCell.xib; sourceTree = "<group>"; };
+		123A01E89B3FB0C8ABBA4F5D /* ServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceController.swift; sourceTree = "<group>"; };
+		123A0202EC4D391C8CC293D5 /* Flickr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flickr.swift; sourceTree = "<group>"; };
+		123A02B81979A17D9321F42A /* Twitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Twitter.swift; path = Glance/Modules/Twitter/Twitter.swift; sourceTree = SOURCE_ROOT; };
+		123A035A0C8FA3F0FA0920BC /* GlanceServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceServices.swift; sourceTree = "<group>"; };
+		123A035AD1D307609E15EDFC /* GlanceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceService.swift; sourceTree = "<group>"; };
+		123A03C5760FB9C9CB8ABFAC /* RootTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootTheme.swift; path = ThemeEngine/RootTheme.swift; sourceTree = "<group>"; };
+		123A040BB55D932C2FE83362 /* StoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryListViewController.swift; sourceTree = "<group>"; };
+		123A049DD9DAD66C77C46A94 /* Github.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Github.storyboard; sourceTree = "<group>"; };
+		123A04C1F8470756FF1BB775 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		123A04CA3091ED316FDEAAD6 /* GlanceWindowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlanceWindowManager.swift; path = App/GlanceWindowManager.swift; sourceTree = "<group>"; };
+		123A06553DC94203BCCCA52E /* GlanceContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceContainerViewController.swift; sourceTree = "<group>"; };
+		123A06AE0FC603BE51570C5F /* InstagramSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramSettingsViewController.swift; sourceTree = "<group>"; };
+		123A06D090D6E46BF9D113B0 /* NSView+FullScreenAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+FullScreenAdditions.m"; sourceTree = "<group>"; };
+		123A07B61B36BD2AADE406A9 /* OAuth2Standard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2Standard.swift; sourceTree = "<group>"; };
+		123A081E8DDF5083D8FBDBC3 /* ControlCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlCenterViewController.swift; sourceTree = "<group>"; };
+		123A08652990EB3073407058 /* ControlCenterWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlCenterWindow.m; sourceTree = "<group>"; };
+		123A087F4F52B0E2D46FC3D1 /* Chronological.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chronological.swift; sourceTree = "<group>"; };
+		123A08992BCBCC9A75C9C5D2 /* GithubSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSettingsViewController.swift; sourceTree = "<group>"; };
+		123A08AB1E363393E75804E4 /* NSView+FullScreenAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+FullScreenAdditions.h"; sourceTree = "<group>"; };
+		123A08B629B74125F8434AF1 /* TTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTweet.m; sourceTree = "<group>"; };
+		123A091D7255A80ADF9BE565 /* FlickrSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrSettingsViewController.swift; sourceTree = "<group>"; };
+		123A0A62CE83D03E5A9D4DE2 /* SolidView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidView.swift; sourceTree = "<group>"; };
+		123A0A6A5C473E520882B509 /* TTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTweet.h; sourceTree = "<group>"; };
+		123A0A7D4FA669196B7B58B0 /* GlanceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceView.swift; sourceTree = "<group>"; };
+		123A0A8F492E3B01A0012FE1 /* Twitter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Twitter.storyboard; sourceTree = "<group>"; };
+		123A0AC77BC2BC294F452B5F /* MutableProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableProperty.swift; sourceTree = "<group>"; };
+		123A0B16A20E5A60E6A51503 /* TwitterSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterSettingsViewController.swift; sourceTree = "<group>"; };
+		123A0B554C43642DDC235DBE /* ServiceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRouter.swift; sourceTree = "<group>"; };
+		123A0BC66ACA189C5EE69A36 /* Tumblr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tumblr.swift; sourceTree = "<group>"; };
+		123A0C48567634709FA5BC4C /* AuthorizationStandard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationStandard.swift; sourceTree = "<group>"; };
+		123A0C8A3B99A49670A139EE /* ServiceSettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceSettingsController.swift; sourceTree = "<group>"; };
+		123A0CE3DAF4123177F6AF12 /* TUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUser.h; sourceTree = "<group>"; };
+		123A0CF64BDE026277EFAC4C /* GlanceWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceWindow.swift; sourceTree = "<group>"; };
+		123A0CF7C746239A62B97EE7 /* ControlCenterWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlCenterWindowController.swift; sourceTree = "<group>"; };
+		123A0D5013C7DE6B26DFAF30 /* Flickr.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Flickr.storyboard; sourceTree = "<group>"; };
+		123A0D6B916EA34EA7E2B943 /* Github.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Github.swift; sourceTree = "<group>"; };
+		123A0E0391579C698A8C0078 /* GenericContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericContainerViewController.swift; sourceTree = "<group>"; };
+		123A0E29D58339D3E5E98D24 /* UnathorizedAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnathorizedAccountViewController.swift; sourceTree = "<group>"; };
+		123A0ECEE9AC38BC5C6DD73A /* Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
+		123A0F5830CC8A9404573540 /* OAuth1Standard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth1Standard.swift; sourceTree = "<group>"; };
+		123A0FBDFBFD75A4831BF658 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		123A0FE9DA3139BEF50DF33B /* GithubGlanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubGlanceViewController.swift; sourceTree = "<group>"; };
+		4B3F1AA84FDC018E574B8C39 /* Pods-Glance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Glance/Pods-Glance.debug.xcconfig"; sourceTree = "<group>"; };
+		5623E6E86D452066CE3AAA0B /* Pods_Glance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Glance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D564BB4DF8E9106E5A4543B2 /* Pods-Glance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glance.release.xcconfig"; path = "Pods/Target Support Files/Pods-Glance/Pods-Glance.release.xcconfig"; sourceTree = "<group>"; };
+		D821813D1BC56B7C00368153 /* Glance.AuthorizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Glance.AuthorizationViewController.xib; sourceTree = "<group>"; };
+		D823C4611B51BC5E00878E8C /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		D823C4621B51BC5E00878E8C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D823C4671B51BC8700878E8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D834B42E1BC3466700B2ECC7 /* SignalMerge.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SignalMerge.playground; sourceTree = "<group>"; };
+		D834DE121BBD986F004F86AA /* RHPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RHPreferencesWindow.xib; sourceTree = "<group>"; };
+		D848B0E91B6FAC1D00703C52 /* StylizedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylizedView.swift; sourceTree = "<group>"; };
+		D851AB4F1BC711280079C238 /* RHPreferences.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = RHPreferences.framework; path = "/Users/Joe/Library/Developer/Xcode/DerivedData/Glance-eazzmzbgtojetsahpzhubsdttkdf/Build/Products/Debug/RHPreferences.framework"; sourceTree = "<absolute>"; };
+		D85B54041B742C2B00604697 /* NSEdgeInsets+custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSEdgeInsets+custom.swift"; sourceTree = "<group>"; };
+		D85F0F721B5B3A970013BCDE /* PropertyOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PropertyOf.swift; path = ReactiveCocoa/PropertyOf.swift; sourceTree = "<group>"; };
+		D885F3C31BC610CC003C371C /* Glance.UnathorizedAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Glance.UnathorizedAccountViewController.xib; sourceTree = "<group>"; };
+		D8948CF21B35AA1B00A1185A /* GlanceWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceWindowController.swift; sourceTree = "<group>"; };
+		D8966BB81B5A9B080043A2B2 /* GlanceFullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceFullViewController.swift; sourceTree = "<group>"; };
+		D8966BBC1B5A9CC80043A2B2 /* GlanceFullView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceFullView.swift; sourceTree = "<group>"; };
 		D8983D781B24C5380000AAD3 /* Glance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8983D7C1B24C5380000AAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8983D7D1B24C5380000AAD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8983D7F1B24C5380000AAD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8983D7D1B24C5380000AAD3 /* GlanceApplicationDeleate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceApplicationDeleate.swift; sourceTree = "<group>"; };
+		D8983D7F1B24C5380000AAD3 /* BaseGlanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGlanceViewController.swift; sourceTree = "<group>"; };
 		D8983D811B24C5380000AAD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D8983D841B24C5380000AAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8983D8A1B24C5380000AAD3 /* GlanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8983D8F1B24C5380000AAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8983D901B24C5380000AAD3 /* GlanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceTests.swift; sourceTree = "<group>"; };
+		D8983DA21B24C8890000AAD3 /* GlanceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GlanceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8983DA51B24C8890000AAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8983DA61B24C8890000AAD3 /* GlanceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceKit.h; sourceTree = "<group>"; };
+		D8983DAC1B24C8890000AAD3 /* GlanceKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlanceKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8983DB41B24C8890000AAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8983DB51B24C8890000AAD3 /* GlanceKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceKitTests.swift; sourceTree = "<group>"; };
+		D8983DC31B24C8DA0000AAD3 /* GlanceKitApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceKitApplication.swift; sourceTree = "<group>"; };
+		D89975C41B530D410062984C /* GlanceKit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GlanceKit.storyboard; sourceTree = "<group>"; };
+		D89975C71B530F580062984C /* GlanceKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlanceKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		D89975CD1B53456F0062984C /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = ThemeEngine/Theme.swift; sourceTree = "<group>"; };
+		D89975D01B534AFB0062984C /* ThemeEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThemeEngine.swift; path = ThemeEngine/ThemeEngine.swift; sourceTree = "<group>"; };
+		D89975D41B5355B50062984C /* NSFileManagerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSFileManagerExt.swift; sourceTree = "<group>"; };
+		D89B434B1BBCEEC900A3D241 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/Mac/Box.framework; sourceTree = "<group>"; };
+		D8A2D2DF1B9751E100CA8CF3 /* GlanceWindowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceWindowManager.swift; sourceTree = "<group>"; };
+		D8AC743B1B51CCE70008EFB3 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		D8ADF0A71C01212B00B28DE7 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		D8B136811BC72E47003EF7E9 /* ServiceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceListViewController.swift; sourceTree = "<group>"; };
+		D8B136851BC74671003EF7E9 /* ServicesSplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesSplashScreenViewController.swift; sourceTree = "<group>"; };
+		D8B136861BC74671003EF7E9 /* ServicesSplashScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServicesSplashScreenViewController.xib; sourceTree = "<group>"; };
+		D8B136891BC747FD003EF7E9 /* ServiceDetailContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDetailContainerViewController.swift; sourceTree = "<group>"; };
+		D8C2F3F91BBF352300340D38 /* ServiceSettingsContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceSettingsContainerController.swift; sourceTree = "<group>"; };
+		D8C2F3FF1BBF3E9900340D38 /* ServiceList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceList.swift; sourceTree = "<group>"; };
+		D8C2F4011BBF43B900340D38 /* Tumblr.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tumblr.storyboard; sourceTree = "<group>"; };
+		D8C2F4031BBF4E3500340D38 /* glanceSplash.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = glanceSplash.xib; sourceTree = "<group>"; };
+		D8C2F4051BBF753500340D38 /* Runes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Runes.framework; path = "/Users/Joe/Library/Developer/Xcode/DerivedData/Glance-eazzmzbgtojetsahpzhubsdttkdf/Build/Products/Debug/Runes.framework"; sourceTree = "<absolute>"; };
+		D8C46E381BBCCDD5008D3E9E /* RHPreferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RHPreferences.framework; path = Carthage/Build/Mac/RHPreferences.framework; sourceTree = "<group>"; };
+		D8C46E3E1BBCCF1F008D3E9E /* glance-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "glance-bridging-header.h"; sourceTree = "<group>"; };
+		D8E5A7571B651CE000097856 /* GlanceContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceContainerView.swift; sourceTree = "<group>"; };
+		D8E5A7591B651CEA00097856 /* GlanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceViewController.swift; sourceTree = "<group>"; };
+		D8F3D7651C03F7AB007A41FB /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		D8F3D76A1C03FA17007A41FB /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/Mac/Cartography.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +320,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B5E4A91B51D03300019D55 /* CoreGraphics.framework in Frameworks */,
+				D8B5E4A71B51D02E00019D55 /* Pods_Glance.framework in Frameworks */,
+				D8C2F4061BBF753500340D38 /* Runes.framework in Frameworks */,
+				D89B43391BBCEB2600A3D241 /* QuartzCore.framework in Frameworks */,
+				D89B43371BBCEB2600A3D241 /* Quartz.framework in Frameworks */,
+				D8983DB91B24C8890000AAD3 /* GlanceKit.framework in Frameworks */,
+				D8F3D7661C03F7AB007A41FB /* ReactiveCocoa.framework in Frameworks */,
+				D8F3D76B1C03FA17007A41FB /* Cartography.framework in Frameworks */,
+				D8F3D7681C03F9EE007A41FB /* ReactiveCocoa.framework in Frameworks */,
+				D851AB501BC711280079C238 /* RHPreferences.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,18 +337,323 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AC74451B51CCE70008EFB3 /* Result.framework in Frameworks */,
+				D8C46E3A1BBCCDD5008D3E9E /* RHPreferences.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8983D9E1B24C8890000AAD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C2F4081BBF757000340D38 /* Runes.framework in Frameworks */,
+				D8AC74461B51CCE70008EFB3 /* Result.framework in Frameworks */,
+				D8F3D76C1C03FA17007A41FB /* Cartography.framework in Frameworks */,
+				D8C46E3B1BBCCE28008D3E9E /* RHPreferences.framework in Frameworks */,
+				D8F3D7671C03F7AB007A41FB /* ReactiveCocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8983DA91B24C8890000AAD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8983DAD1B24C8890000AAD3 /* GlanceKit.framework in Frameworks */,
+				D8AC74471B51CCE70008EFB3 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A091C02E2721E60C7F6E7A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D89B434B1BBCEEC900A3D241 /* Box.framework */,
+				D8C46E381BBCCDD5008D3E9E /* RHPreferences.framework */,
+				D823C4671B51BC8700878E8C /* CoreGraphics.framework */,
+				D823C4611B51BC5E00878E8C /* Quartz.framework */,
+				D823C4621B51BC5E00878E8C /* QuartzCore.framework */,
+				D8AC743B1B51CCE70008EFB3 /* Result.framework */,
+				5623E6E86D452066CE3AAA0B /* Pods_Glance.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		123A007B921FA2CD58F1A501 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				123A045911FA9B233AA14EF0 /* Tumblr */,
+				D8C46E3F1BBCDD05008D3E9E /* Flickr */,
+				123A0B77060949AB62DB1B32 /* Github */,
+				123A05CDC16D48DA627D7E2E /* Instagram */,
+				123A07CB41A99632AD20D642 /* Twitter */,
+				123A01B0F1ABE57F16A05813 /* Service */,
+				D8C2F3FF1BBF3E9900340D38 /* ServiceList.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		123A017305DC4317EB75769E /* ControlCenterWindow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ControlCenterWindow;
+			sourceTree = "<group>";
+		};
+		123A01B0F1ABE57F16A05813 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				123A0FBDFBFD75A4831BF658 /* Service.swift */,
+				D8C2F3F91BBF352300340D38 /* ServiceSettingsContainerController.swift */,
+				123A00EAF4F2BFDACA314630 /* ServiceDisplay.swift */,
+				123A01E89B3FB0C8ABBA4F5D /* ServiceController.swift */,
+				123A0F5830CC8A9404573540 /* OAuth1Standard.swift */,
+				123A07B61B36BD2AADE406A9 /* OAuth2Standard.swift */,
+				123A0C48567634709FA5BC4C /* AuthorizationStandard.swift */,
+				123A0C8A3B99A49670A139EE /* ServiceSettingsController.swift */,
+				123A0B554C43642DDC235DBE /* ServiceRouter.swift */,
+				123A087F4F52B0E2D46FC3D1 /* Chronological.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		123A023E3123520A005E4BF2 /* Tweet */ = {
+			isa = PBXGroup;
+			children = (
+				123A0A6A5C473E520882B509 /* TTweet.h */,
+				123A08B629B74125F8434AF1 /* TTweet.m */,
+			);
+			path = Tweet;
+			sourceTree = "<group>";
+		};
+		123A03DB8215F5E0EFC0DAFA /* Glance */ = {
+			isa = PBXGroup;
+			children = (
+				123A0FE9DA3139BEF50DF33B /* GithubGlanceViewController.swift */,
+			);
+			path = Glance;
+			sourceTree = "<group>";
+		};
+		123A0412A6DF4152216B4149 /* ApplicationWindow */ = {
+			isa = PBXGroup;
+			children = (
+				D8966BB81B5A9B080043A2B2 /* GlanceFullViewController.swift */,
+				D8948CF21B35AA1B00A1185A /* GlanceWindowController.swift */,
+				123A0CF64BDE026277EFAC4C /* GlanceWindow.swift */,
+				D8966BBC1B5A9CC80043A2B2 /* GlanceFullView.swift */,
+			);
+			path = ApplicationWindow;
+			sourceTree = "<group>";
+		};
+		123A045911FA9B233AA14EF0 /* Tumblr */ = {
+			isa = PBXGroup;
+			children = (
+				123A0BC66ACA189C5EE69A36 /* Tumblr.swift */,
+				123A0F40A3B05754576096A4 /* Settings */,
+				D8C2F4011BBF43B900340D38 /* Tumblr.storyboard */,
+			);
+			path = Tumblr;
+			sourceTree = "<group>";
+		};
+		123A05CDC16D48DA627D7E2E /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				123A0ECEE9AC38BC5C6DD73A /* Instagram.swift */,
+				123A0B48F8D94982375CA14A /* Settings */,
+				123A005EE3E3ADB9AD549C2A /* Instagram.storyboard */,
+			);
+			path = Instagram;
+			sourceTree = "<group>";
+		};
+		123A05F39C7B2133A0C831FF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				123A035A0C8FA3F0FA0920BC /* GlanceServices.swift */,
+				123A035AD1D307609E15EDFC /* GlanceService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		123A07CB41A99632AD20D642 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				123A02B81979A17D9321F42A /* Twitter.swift */,
+				123A0A3A315553AAED130EB2 /* Settings */,
+				123A0A8F492E3B01A0012FE1 /* Twitter.storyboard */,
+				123A023E3123520A005E4BF2 /* Tweet */,
+				123A01B5139BFB11370ACA0D /* TwitterRouter.swift */,
+				123A0DBF598FF067ABF7834F /* User */,
+			);
+			path = Twitter;
+			sourceTree = "<group>";
+		};
+		123A09A50660E295287936FE /* GithubControlCenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GithubControlCenter;
+			sourceTree = "<group>";
+		};
+		123A0A3A315553AAED130EB2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				123A0B16A20E5A60E6A51503 /* TwitterSettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		123A0B48F8D94982375CA14A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				123A06AE0FC603BE51570C5F /* InstagramSettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		123A0B77060949AB62DB1B32 /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				123A0CFFA6C34E711886CCD9 /* Settings */,
+				123A03DB8215F5E0EFC0DAFA /* Glance */,
+				123A0D6B916EA34EA7E2B943 /* Github.swift */,
+				123A049DD9DAD66C77C46A94 /* Github.storyboard */,
+			);
+			path = Github;
+			sourceTree = "<group>";
+		};
+		123A0C43E82CA743624EA860 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				123A091D7255A80ADF9BE565 /* FlickrSettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		123A0CFEF2D47532287DC5F1 /* ControlCenter */ = {
+			isa = PBXGroup;
+			children = (
+				123A0CF7C746239A62B97EE7 /* ControlCenterWindowController.swift */,
+				D821813D1BC56B7C00368153 /* Glance.AuthorizationViewController.xib */,
+				D885F3C31BC610CC003C371C /* Glance.UnathorizedAccountViewController.xib */,
+				D8C2F4031BBF4E3500340D38 /* glanceSplash.xib */,
+				D834DE121BBD986F004F86AA /* RHPreferencesWindow.xib */,
+				D834B42E1BC3466700B2ECC7 /* SignalMerge.playground */,
+				123A08652990EB3073407058 /* ControlCenterWindow.m */,
+				123A01A609234BA45E5005C6 /* ControlCenterWindow.h */,
+				123A017305DC4317EB75769E /* ControlCenterWindow */,
+				123A09A50660E295287936FE /* GithubControlCenter */,
+				123A0E29D58339D3E5E98D24 /* UnathorizedAccountViewController.swift */,
+				123A0F14FC15E5B0141211E7 /* Services */,
+				123A081E8DDF5083D8FBDBC3 /* ControlCenterViewController.swift */,
+			);
+			path = ControlCenter;
+			sourceTree = "<group>";
+		};
+		123A0CFFA6C34E711886CCD9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				123A08992BCBCC9A75C9C5D2 /* GithubSettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		123A0DBF598FF067ABF7834F /* User */ = {
+			isa = PBXGroup;
+			children = (
+				123A0CE3DAF4123177F6AF12 /* TUser.h */,
+				123A000D4CEA1689F26C285D /* TUser.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		123A0F14FC15E5B0141211E7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D8B136851BC74671003EF7E9 /* ServicesSplashScreenViewController.swift */,
+				D8B136861BC74671003EF7E9 /* ServicesSplashScreenViewController.xib */,
+				D8B136891BC747FD003EF7E9 /* ServiceDetailContainerViewController.swift */,
+				123A01BA3D6FE39B4CBE4BA6 /* ServicesSettingsSplitViewControl.swift */,
+				D8B136811BC72E47003EF7E9 /* ServiceListViewController.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		123A0F40A3B05754576096A4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				123A01D0B6828222ABD9AE4F /* TumblrSettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		123A0F4E5638B167554050FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				123A04C1F8470756FF1BB775 /* DateExtensions.swift */,
+				123A0E0391579C698A8C0078 /* GenericContainerViewController.swift */,
+				123A0AC77BC2BC294F452B5F /* MutableProperty.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D848B0E71B6FABCC00703C52 /* Archetecture */ = {
+			isa = PBXGroup;
+			children = (
+				D848B0E81B6FABD100703C52 /* StylizedViews */,
+			);
+			name = Archetecture;
+			path = ThemeEngine/Archetecture;
+			sourceTree = "<group>";
+		};
+		D848B0E81B6FABD100703C52 /* StylizedViews */ = {
+			isa = PBXGroup;
+			children = (
+				D848B0E91B6FAC1D00703C52 /* StylizedView.swift */,
+				123A0A62CE83D03E5A9D4DE2 /* SolidView.swift */,
+			);
+			path = StylizedViews;
+			sourceTree = "<group>";
+		};
+		D85B54031B742C0800604697 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				D85B54061B742CEF00604697 /* NSGeometry */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		D85B54061B742CEF00604697 /* NSGeometry */ = {
+			isa = PBXGroup;
+			children = (
+				D85B54041B742C2B00604697 /* NSEdgeInsets+custom.swift */,
+			);
+			path = NSGeometry;
+			sourceTree = "<group>";
+		};
+		D85F0F711B5B3A800013BCDE /* ReactiveCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				D85F0F721B5B3A970013BCDE /* PropertyOf.swift */,
+			);
+			name = ReactiveCocoa;
+			sourceTree = "<group>";
+		};
 		D8983D6F1B24C5380000AAD3 = {
 			isa = PBXGroup;
 			children = (
+				D8F3D76A1C03FA17007A41FB /* Cartography.framework */,
+				D8F3D7651C03F7AB007A41FB /* ReactiveCocoa.framework */,
+				D8ADF0A71C01212B00B28DE7 /* MyPlayground.playground */,
+				D851AB4F1BC711280079C238 /* RHPreferences.framework */,
+				D8C2F4051BBF753500340D38 /* Runes.framework */,
 				D8983D7A1B24C5380000AAD3 /* Glance */,
 				D8983D8D1B24C5380000AAD3 /* GlanceTests */,
+				D8983DA31B24C8890000AAD3 /* GlanceKit */,
+				D8983DB21B24C8890000AAD3 /* GlanceKitTests */,
 				D8983D791B24C5380000AAD3 /* Products */,
+				EE08BC774F36692B6C3376E6 /* Pods */,
+				0A091C02E2721E60C7F6E7A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +662,8 @@
 			children = (
 				D8983D781B24C5380000AAD3 /* Glance.app */,
 				D8983D8A1B24C5380000AAD3 /* GlanceTests.xctest */,
+				D8983DA21B24C8890000AAD3 /* GlanceKit.framework */,
+				D8983DAC1B24C8890000AAD3 /* GlanceKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,11 +671,14 @@
 		D8983D7A1B24C5380000AAD3 /* Glance */ = {
 			isa = PBXGroup;
 			children = (
-				D8983D7D1B24C5380000AAD3 /* AppDelegate.swift */,
-				D8983D7F1B24C5380000AAD3 /* ViewController.swift */,
+				D8E3CB7B1C26163500BAC3FC /* Components */,
+				D89975C31B52B7930062984C /* App */,
+				D8983D7F1B24C5380000AAD3 /* BaseGlanceViewController.swift */,
 				D8983D811B24C5380000AAD3 /* Images.xcassets */,
 				D8983D831B24C5380000AAD3 /* Main.storyboard */,
 				D8983D7B1B24C5380000AAD3 /* Supporting Files */,
+				123A0CFEF2D47532287DC5F1 /* ControlCenter */,
+				123A007B921FA2CD58F1A501 /* Modules */,
 			);
 			path = Glance;
 			sourceTree = "<group>";
@@ -88,6 +687,7 @@
 			isa = PBXGroup;
 			children = (
 				D8983D7C1B24C5380000AAD3 /* Info.plist */,
+				D8C46E3E1BBCCF1F008D3E9E /* glance-bridging-header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,20 +709,171 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D8983DA31B24C8890000AAD3 /* GlanceKit */ = {
+			isa = PBXGroup;
+			children = (
+				D89975D71B5355BE0062984C /* Extensions */,
+				D89975C61B530DDD0062984C /* ThemeEngine */,
+				D8983DC21B24C8C70000AAD3 /* GlanceKitApplication */,
+				D8983DA61B24C8890000AAD3 /* GlanceKit.h */,
+				D8E5A7561B651CA900097856 /* Glance */,
+				D8983DA41B24C8890000AAD3 /* Supporting Files */,
+				D89975C41B530D410062984C /* GlanceKit.storyboard */,
+				123A05F39C7B2133A0C831FF /* Services */,
+			);
+			path = GlanceKit;
+			sourceTree = "<group>";
+		};
+		D8983DA41B24C8890000AAD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8983DA51B24C8890000AAD3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8983DB21B24C8890000AAD3 /* GlanceKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8983DB51B24C8890000AAD3 /* GlanceKitTests.swift */,
+				D8983DB31B24C8890000AAD3 /* Supporting Files */,
+			);
+			path = GlanceKitTests;
+			sourceTree = "<group>";
+		};
+		D8983DB31B24C8890000AAD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8983DB41B24C8890000AAD3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8983DC21B24C8C70000AAD3 /* GlanceKitApplication */ = {
+			isa = PBXGroup;
+			children = (
+				D8A2D2DE1B9750C800CA8CF3 /* WindowManager */,
+				123A0412A6DF4152216B4149 /* ApplicationWindow */,
+				D8983DC31B24C8DA0000AAD3 /* GlanceKitApplication.swift */,
+			);
+			path = GlanceKitApplication;
+			sourceTree = "<group>";
+		};
+		D89975C31B52B7930062984C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				123A0F4E5638B167554050FC /* Extensions */,
+				D8983D7D1B24C5380000AAD3 /* GlanceApplicationDeleate.swift */,
+				123A04CA3091ED316FDEAAD6 /* GlanceWindowManager.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		D89975C61B530DDD0062984C /* ThemeEngine */ = {
+			isa = PBXGroup;
+			children = (
+				D848B0E71B6FABCC00703C52 /* Archetecture */,
+				123A03C5760FB9C9CB8ABFAC /* RootTheme.swift */,
+				D89975D01B534AFB0062984C /* ThemeEngine.swift */,
+				D89975CD1B53456F0062984C /* Theme.swift */,
+				D89975C71B530F580062984C /* GlanceKit-Bridging-Header.h */,
+			);
+			name = ThemeEngine;
+			sourceTree = "<group>";
+		};
+		D89975D71B5355BE0062984C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D85B54031B742C0800604697 /* Foundation */,
+				D85F0F711B5B3A800013BCDE /* ReactiveCocoa */,
+				D89975D41B5355B50062984C /* NSFileManagerExt.swift */,
+				123A06D090D6E46BF9D113B0 /* NSView+FullScreenAdditions.m */,
+				123A08AB1E363393E75804E4 /* NSView+FullScreenAdditions.h */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D8A2D2DE1B9750C800CA8CF3 /* WindowManager */ = {
+			isa = PBXGroup;
+			children = (
+				D8A2D2DF1B9751E100CA8CF3 /* GlanceWindowManager.swift */,
+			);
+			path = WindowManager;
+			sourceTree = "<group>";
+		};
+		D8C46E3F1BBCDD05008D3E9E /* Flickr */ = {
+			isa = PBXGroup;
+			children = (
+				123A0202EC4D391C8CC293D5 /* Flickr.swift */,
+				123A0C43E82CA743624EA860 /* Settings */,
+				123A0D5013C7DE6B26DFAF30 /* Flickr.storyboard */,
+			);
+			path = Flickr;
+			sourceTree = "<group>";
+		};
+		D8E3CB7B1C26163500BAC3FC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				123A040BB55D932C2FE83362 /* StoryListViewController.swift */,
+				123A01841029A1FE77F8994B /* TimelineViewController.swift */,
+				123A01D58F2143BAF9BC5AB2 /* TwitterCell.xib */,
+				123A01D2F5773EBD07A45F36 /* TTweetMiniView.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		D8E5A7561B651CA900097856 /* Glance */ = {
+			isa = PBXGroup;
+			children = (
+				D8E5A7571B651CE000097856 /* GlanceContainerView.swift */,
+				D8E5A7591B651CEA00097856 /* GlanceViewController.swift */,
+				123A06553DC94203BCCCA52E /* GlanceContainerViewController.swift */,
+				123A0A7D4FA669196B7B58B0 /* GlanceView.swift */,
+			);
+			path = Glance;
+			sourceTree = "<group>";
+		};
+		EE08BC774F36692B6C3376E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B3F1AA84FDC018E574B8C39 /* Pods-Glance.debug.xcconfig */,
+				D564BB4DF8E9106E5A4543B2 /* Pods-Glance.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D8983D9F1B24C8890000AAD3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8983DA71B24C8890000AAD3 /* GlanceKit.h in Headers */,
+				123A039CDDC14A88599D935C /* ControlCenterWindow.h in Headers */,
+				123A0770515B85EFA1CEB8CD /* NSView+FullScreenAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		D8983D771B24C5380000AAD3 /* Glance */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8983D941B24C5380000AAD3 /* Build configuration list for PBXNativeTarget "Glance" */;
 			buildPhases = (
+				CCE4A7CED8316F56654AABA4 /* Check Pods Manifest.lock */,
 				D8983D741B24C5380000AAD3 /* Sources */,
 				D8983D751B24C5380000AAD3 /* Frameworks */,
 				D8983D761B24C5380000AAD3 /* Resources */,
+				D8983DBE1B24C8890000AAD3 /* Embed Frameworks */,
+				BF04D87DF8A30666B44A6C91 /* Embed Pods Frameworks */,
+				840C4EB68C4EA5B193D500F8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D8983DB81B24C8890000AAD3 /* PBXTargetDependency */,
 			);
 			name = Glance;
 			productName = Glance;
@@ -147,19 +898,66 @@
 			productReference = D8983D8A1B24C5380000AAD3 /* GlanceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D8983DA11B24C8890000AAD3 /* GlanceKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8983DBB1B24C8890000AAD3 /* Build configuration list for PBXNativeTarget "GlanceKit" */;
+			buildPhases = (
+				D8983D9D1B24C8890000AAD3 /* Sources */,
+				D8983D9E1B24C8890000AAD3 /* Frameworks */,
+				D8983D9F1B24C8890000AAD3 /* Headers */,
+				D8983DA01B24C8890000AAD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlanceKit;
+			productName = GlanceKit;
+			productReference = D8983DA21B24C8890000AAD3 /* GlanceKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D8983DAB1B24C8890000AAD3 /* GlanceKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8983DBF1B24C8890000AAD3 /* Build configuration list for PBXNativeTarget "GlanceKitTests" */;
+			buildPhases = (
+				D8983DA81B24C8890000AAD3 /* Sources */,
+				D8983DA91B24C8890000AAD3 /* Frameworks */,
+				D8983DAA1B24C8890000AAD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8983DAF1B24C8890000AAD3 /* PBXTargetDependency */,
+				D8983DB11B24C8890000AAD3 /* PBXTargetDependency */,
+			);
+			name = GlanceKitTests;
+			productName = GlanceKitTests;
+			productReference = D8983DAC1B24C8890000AAD3 /* GlanceKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D8983D701B24C5380000AAD3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Joseph Daniels";
 				TargetAttributes = {
 					D8983D771B24C5380000AAD3 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
 					D8983D891B24C5380000AAD3 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = D8983D771B24C5380000AAD3;
+					};
+					D8983DA11B24C8890000AAD3 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = DTX6R6C2AG;
+					};
+					D8983DAB1B24C8890000AAD3 = {
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = D8983D771B24C5380000AAD3;
 					};
@@ -180,6 +978,8 @@
 			targets = (
 				D8983D771B24C5380000AAD3 /* Glance */,
 				D8983D891B24C5380000AAD3 /* GlanceTests */,
+				D8983DA11B24C8890000AAD3 /* GlanceKit */,
+				D8983DAB1B24C8890000AAD3 /* GlanceKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -189,8 +989,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D834DE131BBD986F004F86AA /* RHPreferencesWindow.xib in Resources */,
 				D8983D821B24C5380000AAD3 /* Images.xcassets in Resources */,
 				D8983D851B24C5380000AAD3 /* Main.storyboard in Resources */,
+				D8C2F4021BBF43B900340D38 /* Tumblr.storyboard in Resources */,
+				123A0FC297F0A101286BD849 /* Twitter.storyboard in Resources */,
+				123A089F9A13C810E3295EA8 /* Instagram.storyboard in Resources */,
+				123A0E505E306136D275ED77 /* Flickr.storyboard in Resources */,
+				123A094A2366C5F65F04EAD3 /* Github.storyboard in Resources */,
+				D885F3C41BC610CC003C371C /* Glance.UnathorizedAccountViewController.xib in Resources */,
+				D8B136881BC74671003EF7E9 /* ServicesSplashScreenViewController.xib in Resources */,
+				D8C2F4041BBF4E3500340D38 /* glanceSplash.xib in Resources */,
+				D821813E1BC56B7C00368153 /* Glance.AuthorizationViewController.xib in Resources */,
+				123A092D2740D7D278CFB921 /* TwitterCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,15 +1012,115 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8983DA01B24C8890000AAD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89975C51B530D410062984C /* GlanceKit.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8983DAA1B24C8890000AAD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		840C4EB68C4EA5B193D500F8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Glance/Pods-Glance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF04D87DF8A30666B44A6C91 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Glance/Pods-Glance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCE4A7CED8316F56654AABA4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8983D741B24C5380000AAD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8983D801B24C5380000AAD3 /* ViewController.swift in Sources */,
-				D8983D7E1B24C5380000AAD3 /* AppDelegate.swift in Sources */,
+				D8C46E3C1BBCCE69008D3E9E /* ControlCenterWindowController.swift in Sources */,
+				D8983D801B24C5380000AAD3 /* BaseGlanceViewController.swift in Sources */,
+				D8983D7E1B24C5380000AAD3 /* GlanceApplicationDeleate.swift in Sources */,
+				123A00A0DB64F383EA39DD79 /* DateExtensions.swift in Sources */,
+				D8C2F4001BBF3E9900340D38 /* ServiceList.swift in Sources */,
+				123A00B114959194BF8722DA /* GithubSettingsViewController.swift in Sources */,
+				D8B1368A1BC747FD003EF7E9 /* ServiceDetailContainerViewController.swift in Sources */,
+				123A0070AF99ACEB22B31EAE /* Twitter.swift in Sources */,
+				123A02FBE878E2132D423FF5 /* Github.swift in Sources */,
+				123A0E8B22AEA5E16E51BE49 /* Instagram.swift in Sources */,
+				123A03B3231267797B7700EF /* Tumblr.swift in Sources */,
+				D8B136871BC74671003EF7E9 /* ServicesSplashScreenViewController.swift in Sources */,
+				123A04ECDF78A8BC7DF2B572 /* UnathorizedAccountViewController.swift in Sources */,
+				123A01B3BC89C0A7ABA1C135 /* Flickr.swift in Sources */,
+				123A0CF738C102FD860CD486 /* GlanceWindowManager.swift in Sources */,
+				123A006AD386B4DE3D2D9FBF /* Service.swift in Sources */,
+				123A0671484AF73F8B8C1827 /* ServiceDisplay.swift in Sources */,
+				123A0CEB5D3A2DB7F989551F /* ServiceController.swift in Sources */,
+				123A05F1EB9C85D366479AFB /* InstagramSettingsViewController.swift in Sources */,
+				123A0AF3088752B352DEF4A5 /* TumblrSettingsViewController.swift in Sources */,
+				123A049D721198E5C101CD6D /* TwitterSettingsViewController.swift in Sources */,
+				D8C2F3FA1BBF352300340D38 /* ServiceSettingsContainerController.swift in Sources */,
+				123A008368AA1AA2149203C3 /* FlickrSettingsViewController.swift in Sources */,
+				D8B136821BC72E47003EF7E9 /* ServiceListViewController.swift in Sources */,
+				123A0B6C30A050C3CF851334 /* ServicesSettingsSplitViewControl.swift in Sources */,
+				123A03060767D37D33D73114 /* OAuth1Standard.swift in Sources */,
+				123A0CD40F5CB49389610340 /* OAuth2Standard.swift in Sources */,
+				123A04C60820852F2E68B53F /* AuthorizationStandard.swift in Sources */,
+				123A02D8B0054993B2EEEE3C /* GenericContainerViewController.swift in Sources */,
+				123A069FD922F2DC9E735FE5 /* MutableProperty.swift in Sources */,
+				123A0A8611E2D522F6B9C318 /* ServiceSettingsController.swift in Sources */,
+				123A08D8C4318797DAD6A8A6 /* ServiceRouter.swift in Sources */,
+				123A0E4156A56F112AB6AE6A /* TTweet.m in Sources */,
+				123A0DF70F50C59A4C355F08 /* TwitterRouter.swift in Sources */,
+				123A04798987574E4B63B768 /* StoryListViewController.swift in Sources */,
+				123A0CAE721C3DD74C5620D0 /* TimelineViewController.swift in Sources */,
+				123A02DE79F6A062D7320CC7 /* Chronological.swift in Sources */,
+				123A0AAB428535EFB75FE894 /* ControlCenterViewController.swift in Sources */,
+				123A0C68EDFC042F15843603 /* TTweetMiniView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +1129,78 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8983D911B24C5380000AAD3 /* GlanceTests.swift in Sources */,
+				123A044703F24B63BA669BC0 /* Twitter.swift in Sources */,
+				123A0B25BC36BE85925FFF1F /* Github.swift in Sources */,
+				123A0874526F260D46AE0768 /* Instagram.swift in Sources */,
+				123A0B38E25CD3FC28D37BBD /* UnathorizedAccountViewController.swift in Sources */,
+				D8C46E3D1BBCCE69008D3E9E /* ControlCenterWindowController.swift in Sources */,
+				123A03F152BA361637A71D8C /* Flickr.swift in Sources */,
+				123A0144025548DDE3ECE985 /* GlanceWindowManager.swift in Sources */,
+				123A01CAF656A3EC2597182D /* Service.swift in Sources */,
+				123A099D6F359BCB18743675 /* ServiceDisplay.swift in Sources */,
+				123A041673439A8A210CA8C5 /* ServiceController.swift in Sources */,
+				123A07E7457530EE3F1B37C1 /* ServicesSettingsSplitViewControl.swift in Sources */,
+				123A077A44570930FDA4553B /* OAuth1Standard.swift in Sources */,
+				123A0A0D0A2A3367E8037C18 /* OAuth2Standard.swift in Sources */,
+				123A0550CA3790BA947F598A /* AuthorizationStandard.swift in Sources */,
+				123A0C35CD7542A040626056 /* GenericContainerViewController.swift in Sources */,
+				123A0689E0E9E8AB2C97DA9C /* MutableProperty.swift in Sources */,
+				123A0FE165D90E877C83657F /* ServiceRouter.swift in Sources */,
+				123A05115F1D3E77B23D0694 /* TTweet.m in Sources */,
+				123A00A57182AE0DE07F8F75 /* TwitterRouter.swift in Sources */,
+				123A0A3F53A701818C77612F /* StoryListViewController.swift in Sources */,
+				123A02831FAA36CAD3611A88 /* TimelineViewController.swift in Sources */,
+				123A08845326A315966214E2 /* Chronological.swift in Sources */,
+				123A011E20016F93E6D505C5 /* ControlCenterViewController.swift in Sources */,
+				123A0CF1C28F8D783D35444F /* TTweetMiniView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8983D9D1B24C8890000AAD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89975CE1B53456F0062984C /* Theme.swift in Sources */,
+				D89975D11B534AFB0062984C /* ThemeEngine.swift in Sources */,
+				D8E5A7581B651CE000097856 /* GlanceContainerView.swift in Sources */,
+				D89975D51B5355B50062984C /* NSFileManagerExt.swift in Sources */,
+				D848B0F01B6FB10700703C52 /* GlanceFullView.swift in Sources */,
+				D8983DC41B24C8DA0000AAD3 /* GlanceKitApplication.swift in Sources */,
+				123A0AF1575A215B9CD89FD1 /* RootTheme.swift in Sources */,
+				D848B0EC1B6FB0D200703C52 /* GlanceFullViewController.swift in Sources */,
+				D8A2D2E01B9751E100CA8CF3 /* GlanceWindowManager.swift in Sources */,
+				D85F0F731B5B3A970013BCDE /* PropertyOf.swift in Sources */,
+				D848B0EB1B6FAC1D00703C52 /* StylizedView.swift in Sources */,
+				D82DE3E71C417A9B00EEAD42 /* GlanceViewController.swift in Sources */,
+				123A034CCAFC39FE3B3C0C43 /* ControlCenterWindow.m in Sources */,
+				D848B0EE1B6FB10700703C52 /* GlanceWindowController.swift in Sources */,
+				123A0DF0EC8149FEC65B25DE /* NSView+FullScreenAdditions.m in Sources */,
+				D848B0EF1B6FB10700703C52 /* GlanceWindow.swift in Sources */,
+				D85B54051B742C2B00604697 /* NSEdgeInsets+custom.swift in Sources */,
+				D8C2F3FC1BBF3CAC00340D38 /* GithubGlanceViewController.swift in Sources */,
+				123A0D81D1810E00D8E26CC2 /* SolidView.swift in Sources */,
+				123A0D8116E5C7A59F793EF8 /* GlanceContainerViewController.swift in Sources */,
+				123A09F8305F747E8F66440B /* GlanceView.swift in Sources */,
+				123A0651CF33717FD1EAE420 /* GlanceServices.swift in Sources */,
+				123A0AAC7669AB4280E572EE /* GlanceService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8983DA81B24C8890000AAD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89975CF1B53456F0062984C /* Theme.swift in Sources */,
+				D89975D21B534AFB0062984C /* ThemeEngine.swift in Sources */,
+				D89975D61B5355B50062984C /* NSFileManagerExt.swift in Sources */,
+				D8983DB61B24C8890000AAD3 /* GlanceKitTests.swift in Sources */,
+				D8983DC61B24CBDE0000AAD3 /* GlanceKitApplication.swift in Sources */,
+				123A0358851C0621D0CF4C15 /* NSView+FullScreenAdditions.m in Sources */,
+				123A025D9622CF8A79B6C988 /* SolidView.swift in Sources */,
+				123A00C2F142ED6D7021961D /* GlanceContainerViewController.swift in Sources */,
+				123A0CDC8FA42E1BD657BA4E /* GlanceView.swift in Sources */,
+				123A0CC375324F4CBC9603FC /* GlanceServices.swift in Sources */,
+				123A0A838DD86060983DF066 /* GlanceService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +1211,21 @@
 			isa = PBXTargetDependency;
 			target = D8983D771B24C5380000AAD3 /* Glance */;
 			targetProxy = D8983D8B1B24C5380000AAD3 /* PBXContainerItemProxy */;
+		};
+		D8983DAF1B24C8890000AAD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8983DA11B24C8890000AAD3 /* GlanceKit */;
+			targetProxy = D8983DAE1B24C8890000AAD3 /* PBXContainerItemProxy */;
+		};
+		D8983DB11B24C8890000AAD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8983D771B24C5380000AAD3 /* Glance */;
+			targetProxy = D8983DB01B24C8890000AAD3 /* PBXContainerItemProxy */;
+		};
+		D8983DB81B24C8890000AAD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8983DA11B24C8890000AAD3 /* GlanceKit */;
+			targetProxy = D8983DB71B24C8890000AAD3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -264,6 +1262,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -325,23 +1324,41 @@
 		};
 		D8983D951B24C5380000AAD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B3F1AA84FDC018E574B8C39 /* Pods-Glance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Cartography/build/Debug",
+				);
 				INFOPLIST_FILE = Glance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JD.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Glance/glance-bridging-header.h";
 			};
 			name = Debug;
 		};
 		D8983D961B24C5380000AAD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D564BB4DF8E9106E5A4543B2 /* Pods-Glance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Cartography/build/Debug",
+				);
 				INFOPLIST_FILE = Glance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JD.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Glance/glance-bridging-header.h";
 			};
 			name = Release;
 		};
@@ -353,6 +1370,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -360,6 +1378,7 @@
 				);
 				INFOPLIST_FILE = GlanceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JD.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glance.app/Contents/MacOS/Glance";
 			};
@@ -373,10 +1392,124 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = GlanceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JD.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glance.app/Contents/MacOS/Glance";
+			};
+			name = Release;
+		};
+		D8983DBC1B24C8890000AAD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Carthage/Build/Mac\"",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GlanceKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JD.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D8983DBD1B24C8890000AAD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Carthage/Build/Mac\"",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = GlanceKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JD.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D8983DC01B24C8890000AAD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GlanceKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JD.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GlanceKit/GlanceKitTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glance.app/Contents/MacOS/Glance";
+			};
+			name = Debug;
+		};
+		D8983DC11B24C8890000AAD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = GlanceKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JD.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GlanceKit/GlanceKitTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glance.app/Contents/MacOS/Glance";
 			};
 			name = Release;
@@ -400,6 +1533,7 @@
 				D8983D961B24C5380000AAD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8983D971B24C5380000AAD3 /* Build configuration list for PBXNativeTarget "GlanceTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +1542,25 @@
 				D8983D991B24C5380000AAD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8983DBB1B24C8890000AAD3 /* Build configuration list for PBXNativeTarget "GlanceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8983DBC1B24C8890000AAD3 /* Debug */,
+				D8983DBD1B24C8890000AAD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8983DBF1B24C8890000AAD3 /* Build configuration list for PBXNativeTarget "GlanceKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8983DC01B24C8890000AAD3 /* Debug */,
+				D8983DC11B24C8890000AAD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

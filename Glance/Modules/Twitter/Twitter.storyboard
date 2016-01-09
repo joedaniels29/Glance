@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+    </dependencies>
+    <scenes>
+        <!--Twitter Settings View Controller-->
+        <scene sceneID="9ha-Cb-uXK">
+            <objects>
+                <viewController storyboardIdentifier="settings" id="bZk-GC-psi" customClass="TwitterSettingsViewController" customModule="Glance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Rrx-9S-l7K">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="kER-lV-lL8" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="379"/>
+        </scene>
+        <!--Service Settings Controller-->
+        <scene sceneID="LVm-d2-nwY">
+            <objects>
+                <viewController storyboardIdentifier="content" id="Osg-zV-YPG" customClass="ServiceSettingsController" customModule="Glance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="5pS-LX-7q7">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nw2-c5-3j2">
+                                <rect key="frame" x="207" y="142" width="71" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="asdfv asdf " id="noz-49-wNz">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="nw2-c5-3j2" firstAttribute="leading" secondItem="5pS-LX-7q7" secondAttribute="leading" constant="209" id="DFk-Oe-ZsD"/>
+                            <constraint firstItem="nw2-c5-3j2" firstAttribute="top" secondItem="5pS-LX-7q7" secondAttribute="top" constant="141" id="zXI-tH-hce"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="nQt-uT-6V0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="167" y="342"/>
+        </scene>
+    </scenes>
+</document>

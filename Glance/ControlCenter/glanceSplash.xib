@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9060"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SplashScreenViewController" customModule="Glance" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="cxW-xe-heT" id="Fk2-Gc-LsU"/>
+                <outlet property="logInButton" destination="zRP-BQ-owF" id="aua-2U-uc0"/>
+                <outlet property="titleLabel" destination="NJQ-eG-dlQ" id="WQZ-4z-Hyg"/>
+                <outlet property="view" destination="aFK-iO-h5G" id="Afi-Xp-Ydk"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <visualEffectView blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="aFK-iO-h5G">
+            <rect key="frame" x="0.0" y="0.0" width="443" height="415"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="cxW-xe-heT" customClass="SolidView" customModule="GlanceKit">
+                    <rect key="frame" x="0.0" y="0.0" width="443" height="415"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kk0-Mj-B4C">
+                            <rect key="frame" x="18" y="350" width="125" height="45"/>
+                            <animations/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sign in:" id="MYA-vz-BY1">
+                                <font key="font" size="37" name=".AppleSystemUIFont"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NJQ-eG-dlQ">
+                            <rect key="frame" x="362" y="378" width="63" height="17"/>
+                            <animations/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Facebook" id="Sjv-W2-aeI">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rHO-gx-scQ">
+                            <rect key="frame" x="68" y="173" width="307" height="68"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="303" id="x0f-Zg-e5R"/>
+                            </constraints>
+                            <animations/>
+                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="cpR-Wf-xiN">
+                                <font key="font" metaFont="system"/>
+                                <string key="title">Multiline Label Multiline LabelMultiline LabelMultiline LabelMultiline LabelMultiline LabelMultiline Label Multiline Label Multiline Label Multiline Label Multilin Label</string>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zRP-BQ-owF">
+                            <rect key="frame" x="143" y="19" width="157" height="62"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="MKy-oa-wK4"/>
+                                <constraint firstAttribute="width" constant="157" id="bVt-ZL-JfG"/>
+                            </constraints>
+                            <animations/>
+                            <buttonCell key="cell" type="smallSquare" title="Log In" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ID8-Qr-mtc">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="systemUltraLight" size="40"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="login:" target="-2" id="D7P-hw-a4j"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="rHO-gx-scQ" firstAttribute="centerX" secondItem="cxW-xe-heT" secondAttribute="centerX" id="39H-0Q-mOe"/>
+                        <constraint firstItem="rHO-gx-scQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cxW-xe-heT" secondAttribute="leading" constant="70" id="52D-F3-a0h"/>
+                        <constraint firstAttribute="bottom" secondItem="zRP-BQ-owF" secondAttribute="bottom" constant="20" id="A1a-Uc-lqd"/>
+                        <constraint firstItem="zRP-BQ-owF" firstAttribute="centerX" secondItem="cxW-xe-heT" secondAttribute="centerX" id="Cos-gk-Eod"/>
+                        <constraint firstItem="Kk0-Mj-B4C" firstAttribute="leading" secondItem="cxW-xe-heT" secondAttribute="leading" constant="20" id="JiS-mr-SP0"/>
+                        <constraint firstItem="rHO-gx-scQ" firstAttribute="centerY" secondItem="cxW-xe-heT" secondAttribute="centerY" id="RPJ-ni-goL"/>
+                        <constraint firstItem="Kk0-Mj-B4C" firstAttribute="top" secondItem="cxW-xe-heT" secondAttribute="top" constant="20" id="TF3-Rk-9S3"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rHO-gx-scQ" secondAttribute="trailing" constant="70" id="WcJ-8S-o0m"/>
+                        <constraint firstAttribute="trailing" secondItem="NJQ-eG-dlQ" secondAttribute="trailing" constant="20" id="apa-HH-Bij"/>
+                        <constraint firstItem="rHO-gx-scQ" firstAttribute="top" secondItem="Kk0-Mj-B4C" secondAttribute="bottom" constant="109" id="sWp-tH-kyZ"/>
+                        <constraint firstItem="NJQ-eG-dlQ" firstAttribute="top" secondItem="cxW-xe-heT" secondAttribute="top" constant="20" id="zP1-TL-0QZ"/>
+                    </constraints>
+                    <animations/>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="cxW-xe-heT" firstAttribute="leading" secondItem="aFK-iO-h5G" secondAttribute="leading" id="6TV-v8-KGK"/>
+                <constraint firstAttribute="trailing" secondItem="cxW-xe-heT" secondAttribute="trailing" id="bfm-LU-rbK"/>
+                <constraint firstItem="cxW-xe-heT" firstAttribute="top" secondItem="aFK-iO-h5G" secondAttribute="top" id="e7y-z3-bTi"/>
+                <constraint firstAttribute="bottom" secondItem="cxW-xe-heT" secondAttribute="bottom" id="jhe-Rw-DlP"/>
+            </constraints>
+            <animations/>
+            <point key="canvasLocation" x="697.5" y="376.5"/>
+        </visualEffectView>
+    </objects>
+</document>
