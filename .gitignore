@@ -16,7 +16,6 @@ Pods/
 GeneratedDocumentation/
 Carthage.checkout/
 /.bundle
-
 #CocoaPods
 Carthage/
 
